@@ -1,0 +1,6 @@
+# identifique o quarto numero de uma lista
+# informe quantos numeros tem na lista
+
+numeros = [5,6,3,6,8]
+print(f"o quarto numero da lista eh: {numeros[3]}")
+print(f"a lista possui {len(numeros)} numeros")
