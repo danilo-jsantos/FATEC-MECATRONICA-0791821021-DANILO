@@ -1,0 +1,14 @@
+# o programa deve descontar 10% de produtos pagos a vista, e por juros de 5% quando for parcelado em 3vezes ou +
+
+preço = 200
+parcela = 1
+
+if parcela == 1:
+    total_a_pagar = preço * 0.95
+elif parcela == 2:
+     total_a_pagar = preço * 1
+else:
+     if parcela >= 3:
+        total_a_pagar = preço * 1.05
+
+print(f"o total a pagar eh: {total_a_pagar}")
