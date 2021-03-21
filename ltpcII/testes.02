@@ -1,0 +1,9 @@
+nivel_maximo = "1000"
+encheu = False
+
+while encheu != True:
+    quantidade = input("informe a quantidade:")
+    encheu = nivel_maximo == quantidade
+
+print("fim")
+
