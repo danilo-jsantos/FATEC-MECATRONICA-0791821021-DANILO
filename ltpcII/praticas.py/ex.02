@@ -1,0 +1,16 @@
+# o programa deve checar se o usuario tem dinheiro para comprar um dos consoles
+
+playstation5 = 5400
+xbox_series_x = 6700
+xbox_series_s = 2700
+
+saldo = 6699
+
+if saldo >= xbox_series_x:
+    print("pode comprar o series x!")
+elif saldo >= playstation5:
+    print("pode comprar o ps5!")
+elif saldo >= xbox_series_s:
+    print("compre o series s!")
+else:
+    print("melhor economizar mais dinheiro para a compra")
