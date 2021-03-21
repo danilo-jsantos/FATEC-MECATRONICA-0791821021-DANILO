@@ -1,0 +1,8 @@
+idade = 18
+requisito = 18
+
+if idade < requisito:
+    print("voce eh menor de idade")
+else:
+    print("voce eh de maior!")
+print("fim")
