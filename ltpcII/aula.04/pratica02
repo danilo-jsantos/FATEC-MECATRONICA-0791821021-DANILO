@@ -1,0 +1,8 @@
+numeros_jogados = []
+continuar = True
+
+while continuar:
+   numero = int(input("informe um valor:"))
+   numeros_jogados.append(numero)
+   print(numeros_jogados)
+   continuar = input("deseja continuar s/n:") == "s"
