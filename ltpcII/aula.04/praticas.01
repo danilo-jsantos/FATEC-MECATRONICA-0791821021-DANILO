@@ -1,0 +1,10 @@
+#lista de idades
+#achar a media, maxima e minima
+
+idades = []
+
+idades =[20, 32, 42, 21,55, 16]
+
+print(f" a media das idades eh: {sum(idades)/len(idades)}")
+print(f"a maior idade:{max(idades)}")
+print(f"a menor idade: {min(idades)}")
