@@ -1,0 +1,13 @@
+numeros_jogados = []
+continuar = True
+
+while continuar:
+   numero = int(input("informe um valor:"))
+   if numero not in numeros_jogados:
+       numeros_jogados.append(numero)
+   print(numeros_jogados)
+   if len(numeros_jogados) >= 6:
+       if len(numeros_jogados) < 15:
+           continuar = input("deseja continuar s/n:") == "s"
+       else:
+           continuar = False
