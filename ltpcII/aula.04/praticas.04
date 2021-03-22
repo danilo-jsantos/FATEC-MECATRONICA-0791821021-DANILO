@@ -1,0 +1,37 @@
+from random import  randint
+numero_sorteado = []
+while len(numero_sorteado) < 6:
+       numero = randint(1,60)
+       if numero not in numero_sorteado:
+           numero_sorteado.append(numero)
+print(numero_sorteado)
+
+
+numeros_jogados = []
+continuar = True
+
+while continuar:
+   numero = int(input("informe um valor:"))
+   if numero not in numeros_jogados:
+       if numero >=1 and numero <= 60:
+            numeros_jogados.append(numero)
+   print(numeros_jogados)
+   if len(numeros_jogados) >= 6:
+       if len(numeros_jogados) < 15:
+           continuar = input("deseja continuar s/n:") == "s"
+       else:
+           continuar = False
+
+acertos = 0
+for numero in numero_sorteado:
+    if numero in numeros_jogados:
+        acertos = acertos + 1
+print(f"o numerode acertos foi: {acertos}")
+if acertos == 6:
+    print("sena")
+elif acertos == 5:
+    print("quina")
+elif acertos == 4:
+    print("quadra")
+else:
+    print("tente novamente")
