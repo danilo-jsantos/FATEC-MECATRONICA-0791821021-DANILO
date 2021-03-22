@@ -1,0 +1,15 @@
+motoristas = []
+continuar = True
+
+while continuar:
+    nome = input("insira seu nome:")
+
+    if nome == "fim":
+        continuar = False
+    else:
+        motoristas.append(nome)
+        print(motoristas)
+
+import random
+motoreista_da_rodada = random.choice(motoristas)
+print(f"o motorista da rodada eh:{motoreista_da_rodada}")
