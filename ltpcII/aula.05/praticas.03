@@ -1,0 +1,17 @@
+lista_de_compras = []
+continuar = True
+
+while continuar:
+    item = input("item: ").upper()
+    if item == "FIM":
+        continuar = False
+    else:
+        lista_de_compras.append(item)
+
+while len(lista_de_compras) > 0:
+    print("lista")
+    for item in lista_de_compras:
+        print(item)
+    item = input("itens:").upper()
+    if item in lista_de_compras:
+        lista_de_compras.remove(item)
