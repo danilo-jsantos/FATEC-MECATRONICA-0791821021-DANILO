@@ -1,0 +1,24 @@
+from random import randint
+
+numero_secreto = randint(0,100)
+tentativa = []
+acertou = False
+
+while len(tentativa) < 10 and acertou == False:
+    chute = int(input("informe um numero:"))
+    tentativa.append(chute)
+    if chute == numero_secreto:
+        acertou =True
+    elif chute < numero_secreto:
+        print("chute um valor mais alto!")
+    else:
+        print("chute um valor mais baixo!")
+    print(f"tentativas restantes{10 - len(tentativa)}")
+if acertou:
+    print("parabens!")
+else:
+    print("mais sorte da proxima!")
+
+
+print(f"o numero secreto eh: {numero_secreto}")
+print(f"numero de tentativas: {tentativa}")
